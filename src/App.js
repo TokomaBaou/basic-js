@@ -139,3 +139,10 @@ export default function App() {
 // }
 // console.log(checkSum(50,90));
 
+// const num = 200;
+// const fee = num || "金額未設定です";
+// console.log(fee);
+
+// const num2 = 200;
+// const fee2 = num2 && "何か設定されています";
+// console.log(fee2);
