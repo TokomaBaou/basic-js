@@ -58,13 +58,13 @@ export default function App() {
 
 //5.スプレッド構文
 //配列の展開ができる
-const arr1 = [1, 2, 3, 4, 5];
-// console.log(arr1);
-// console.log(...arr1);
+// const arr1 = [1, 2, 3, 4, 5];
+// // console.log(arr1);
+// // console.log(...arr1);
 
-const sumFunc = (num1, num2) => console.log(num1 + num2);
-sumFunc(arr1[0], arr1[1]);
-sumFunc(...arr1);
+// const sumFunc = (num1, num2) => console.log(num1 + num2);
+// sumFunc(arr1[0], arr1[1]);
+// sumFunc(...arr1);
 
 //配列をまとめる
 // const arr2 = [1,2,3,4,5];
@@ -121,3 +121,21 @@ sumFunc(...arr1);
 //   return num % 2 === 1;
 // });
 // console.log(newNumArr);
+
+//三項演算子
+// const val1 = 1 > 0 ? `trueです`　: `falseです`;
+// console.log(val1);
+
+// const num = 1300
+//3桁めに,を入れるプロパティを使う
+// console.log(num.toLocaleString());
+
+// const num1 = 1200
+// const formattedNum = typeof num === 'number' ? num1.toLocaleString() : `数値を入力して下さい`;
+// console.log(formattedNum);
+
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? `100を超えています`　: `許容範囲内です`;
+// }
+// console.log(checkSum(50,90));
+
