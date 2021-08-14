@@ -58,9 +58,13 @@ export default function App() {
 
 //5.スプレッド構文
 //配列の展開ができる
-// const arr1 = [1,2,3,4,5];
+const arr1 = [1, 2, 3, 4, 5];
 // console.log(arr1);
 // console.log(...arr1);
+
+const sumFunc = (num1, num2) => console.log(num1 + num2);
+sumFunc(arr1[0], arr1[1]);
+sumFunc(...arr1);
 
 //配列をまとめる
 // const arr2 = [1,2,3,4,5];
@@ -76,16 +80,44 @@ export default function App() {
 //[3,4,5]
 
 //配列のコピー
-const arr4 = [10, 20];
-const arr5 = [30, 40];
-const arr6 = [...arr4];
-console.log(arr6);
-//logの結果
-//[10,20]
-const arr7 = [...arr4, ...arr5];
-console.log(arr7);
-//エラーの温床
-const arr8 = arr4;
-arr8[0] = 100;
-console.log(arr4);
+// const arr4 = [10, 20];
+// const arr5 = [30, 40];
+// const arr6 = [...arr4];
+// console.log(arr6);
+// //logの結果
+// //[10,20]
+// const arr7 = [...arr4, ...arr5];
+// console.log(arr7);
+// //エラーの温床
+// const arr8 = arr4;
+// arr8[0] = 100;
+// console.log(arr4);
 //[100,20]
+
+//6.mapやfilter
+// const nameArr = ["しんちゃん","ぼうちゃん","ねねちゃん"];
+// const nameArr2 = nameArr.map((name)=>{
+//   return name;
+// })
+// console.log(nameArr2);
+// //名前を順番に出力する方法
+// nameArr.map((name) => console.log(name));
+
+// //何番目かを付けて出力
+// nameArr.map((name,index)=> console.log(`${index + 1}番目は${name}です`));
+
+// const newNameArr = nameArr.map((name)=>{
+//   if (name === "しんちゃん"){
+//     return `クレヨン${name}`
+//   }else{
+//     return name
+//   }
+// })
+// console.log(newNameArr);
+
+//filter
+// const numArr = [1,2,3,4,5];
+// const newNumArr = numArr.filter((num) => {
+//   return num % 2 === 1;
+// });
+// console.log(newNumArr);
